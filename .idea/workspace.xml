@@ -25,8 +25,10 @@
         <entry file="file://$PROJECT_DIR$/step-by-step-development-plugin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
+              <caret line="27" column="64" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="64" />
+              <folding>
+                <element signature="e#7#1135#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/includes/StepByStepPlugin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="e#7#100#0#PHP" expanded="true" />
               </folding>
@@ -78,8 +80,8 @@
         <option value="$PROJECT_DIR$/uninstall.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/includes/class-stepbystep-plugin.php" />
-        <option value="$PROJECT_DIR$/includes/StepByStepPlugin.php" />
         <option value="$PROJECT_DIR$/step-by-step-development-plugin.php" />
+        <option value="$PROJECT_DIR$/includes/StepByStepPlugin.php" />
       </list>
     </option>
   </component>
@@ -234,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1484507723976</updated>
-      <workItem from="1484507728744" duration="5939000" />
+      <workItem from="1484507728744" duration="6662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5939000" />
+    <option name="totallyTimeSpent" value="6662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1850" y="23" width="1850" height="1057" extended-state="6" />
@@ -280,12 +282,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="php">
-          <url>file://$PROJECT_DIR$/includes/StepByStepPlugin.php</url>
-          <line>17</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -310,15 +306,17 @@
     <entry file="file://$PROJECT_DIR$/step-by-step-development-plugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="64" />
+          <folding>
+            <element signature="e#7#1135#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/StepByStepPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="e#7#100#0#PHP" expanded="true" />
           </folding>
