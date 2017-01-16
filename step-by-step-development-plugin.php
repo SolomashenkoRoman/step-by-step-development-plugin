@@ -29,3 +29,4 @@ require_once plugin_dir_path(__FILE__).'/includes/StepByStepPlugin.php';
 
 
 register_activation_hook( __FILE__, array('includes\StepByStepPlugin' ,  'activation' ) );
+register_deactivation_hook( __FILE__, array('includes\StepByStepPlugin' ,  'deactivation' ) );

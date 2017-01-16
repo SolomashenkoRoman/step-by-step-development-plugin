@@ -30,6 +30,11 @@ class StepByStepPlugin
         error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' activation');
     }
 
+    static public function deactivation()
+    {
+        // debug.log
+        error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' deactivation');
+    }
 
 }
 
