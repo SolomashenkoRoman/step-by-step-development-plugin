@@ -26,3 +26,4 @@ License: A "Slug" license name e.g. GPL2
 */
 
 require_once dirname(__FILE__).'/includes/StepByStepPlugin.php';
+

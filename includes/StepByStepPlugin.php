@@ -22,5 +22,7 @@ class StepByStepPlugin
         return self::$instance;
 
     }
+
+
 }
 StepByStepPlugin::getInstance();
