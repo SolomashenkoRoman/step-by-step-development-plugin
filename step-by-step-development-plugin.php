@@ -24,6 +24,7 @@ License: A "Slug" license name e.g. GPL2
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+require_once plugin_dir_path(__FILE__) . '/config-path.php';
+require_once plugin_dir_path(__FILE__).'/includes/StepByStepPlugin.php';
 
-require_once dirname(__FILE__).'/includes/StepByStepPlugin.php';
 
