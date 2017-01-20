@@ -8,6 +8,7 @@
  */
 namespace includes;
 
+use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
 
 class StepByStepPlugin
@@ -16,6 +17,8 @@ class StepByStepPlugin
     private function __construct() {
         //$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
         //$stepByStepExampleFilter->callMyFilter("Roman");
+        $stepByStepExampleAction = StepByStepExampleAction::newInstance();
+        $stepByStepExampleAction->callMyAction();
     }
     public static function getInstance() {
 
