@@ -15,10 +15,12 @@ class StepByStepPlugin
 {
     private static $instance = null;
     private function __construct() {
-        //$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
-        //$stepByStepExampleFilter->callMyFilter("Roman");
+        $stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
+        $stepByStepExampleFilter->callMyFilter("Roman");
+        $stepByStepExampleFilter->callMyFilterAdditionalParameter("Roman", "Softgroup", "Poltava");
         $stepByStepExampleAction = StepByStepExampleAction::newInstance();
-        //$stepByStepExampleAction->callMyAction();
+        $stepByStepExampleAction->callMyAction();
+        $stepByStepExampleAction->callMyActionAdditionalParameter( 'test1', 'test2', 'test3' );
     }
     public static function getInstance() {
 
