@@ -13,7 +13,16 @@ class StepByStepExampleAction
 {
     public function __construct() {
         //Прикрепим функцию к событию 'my_action'
-        add_filter('my_action', array(&$this, 'myActionFunction'));
+        add_action('my_action', array(&$this, 'myActionFunction'));
+        // Прикрепим функцию к событию 'my_hook'
+        add_action('my_hook', function(){ error_log(1); });
+        add_action('my_hook', function(){ error_log(2); });
+        add_action('my_hook', function(){ error_log(3); });
+        add_action('my_hook', function(){ error_log(4); }, 15);
+        add_action('my_hook', function(){ error_log(5); }, 10); // можно не указывать 10 - по умолчанию
+        add_action('my_hook', function(){ error_log(6); }, 5);
+        do_action('my_hook');
+
     }
     public static function newInstance(){
         $instance = new self;
