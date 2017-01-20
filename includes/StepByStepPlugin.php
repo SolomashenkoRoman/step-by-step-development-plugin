@@ -17,8 +17,8 @@ class StepByStepPlugin
     private function __construct() {
         //$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
         //$stepByStepExampleFilter->callMyFilter("Roman");
-        $stepByStepExampleAction = StepByStepExampleAction::newInstance();
-        $stepByStepExampleAction->callMyAction();
+        //$stepByStepExampleAction = StepByStepExampleAction::newInstance();
+        //$stepByStepExampleAction->callMyAction();
     }
     public static function getInstance() {
 
