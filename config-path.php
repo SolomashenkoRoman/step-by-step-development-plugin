@@ -22,3 +22,5 @@ $TPOPlUGINs = get_plugin_data(STEPBYSTEP_PlUGIN_DIR.'/'.basename(STEPBYSTEP_PlUG
 define("STEPBYSTEP_PlUGIN_VERSION", $TPOPlUGINs['Version']);
 define("STEPBYSTEP_PlUGIN_NAME", $TPOPlUGINs['Name']);
 
+define("STEPBYSTEP_PlUGIN_DIR_LOCALIZATION", plugin_basename(STEPBYSTEP_PlUGIN_DIR.'/languages/'));
+

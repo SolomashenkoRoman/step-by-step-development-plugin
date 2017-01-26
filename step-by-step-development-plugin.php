@@ -7,6 +7,8 @@ Description: Step by step development of the plugin.
 Version: 1.0
 Author: romansolomashenko
 Author URI: https://www.linkedin.com/in/solomashenkoroman/
+Text Domain: step-by-step-development-plugin
+Domain Path: /languages/
 License: A "Slug" license name e.g. GPL2
     Copyright 2017  Solomashenko Roman  (email: solomashenko.roman.1991@gmail.com)
 
@@ -31,3 +33,4 @@ require_once STEPBYSTEP_PlUGIN_DIR.'/includes/StepByStepPlugin.php';
 
 register_activation_hook( __FILE__, array('includes\StepByStepPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\StepByStepPlugin' ,  'deactivation' ) );
+
