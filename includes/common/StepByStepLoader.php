@@ -53,6 +53,6 @@ class StepByStepLoader
      * Метод будет срабатывать везде. Загрузка классов для Админ панеле и Сайта
      */
     public function all(){
-
+        StepByStepLocalization::getInstance();
     }
 }
