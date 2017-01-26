@@ -26,6 +26,7 @@ class StepByStepExampleAction
 
         add_action('my_action', array(&$this, 'myActionFunctionAdditionalParameter'), 10, 3);
 
+        add_action('plugins_loaded', function(){ error_log(__('Hello', STEPBYSTEP_PlUGIN_TEXTDOMAIN)); }, 100);
 
     }
     public static function newInstance(){

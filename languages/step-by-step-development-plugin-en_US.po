@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Step By Step Development Plugin v1.0.0\n"
 "Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
-"POT-Creation-Date: 2017-01-26 13:45+0200\n"
+"POT-Creation-Date: 2017-01-26 14:06+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: Solomashenko Roman <solomashenko.roman.1991@gmail."
@@ -25,6 +25,6 @@ msgstr ""
 "X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/common/StepByStepLoader.php:57
+#: includes/example/StepByStepExampleAction.php:29
 msgid "Hello"
 msgstr "Hello world"
