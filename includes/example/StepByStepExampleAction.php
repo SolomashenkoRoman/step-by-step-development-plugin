@@ -26,6 +26,7 @@ class StepByStepExampleAction
 
         add_action('my_action', array(&$this, 'myActionFunctionAdditionalParameter'), 10, 3);
 
+
     }
     public static function newInstance(){
         $instance = new self;
