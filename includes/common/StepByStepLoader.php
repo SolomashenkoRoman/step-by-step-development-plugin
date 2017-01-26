@@ -57,7 +57,7 @@ class StepByStepLoader
      */
     public function all(){
         StepByStepLocalization::getInstance();
-        $stepByStepExampleAction = StepByStepExampleAction::newInstance();
+        //$stepByStepExampleAction = StepByStepExampleAction::newInstance();
         /*$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
        $stepByStepExampleFilter->callMyFilter("Roman");
        $stepByStepExampleFilter->callMyFilterAdditionalParameter("Roman", "Softgroup", "Poltava");
