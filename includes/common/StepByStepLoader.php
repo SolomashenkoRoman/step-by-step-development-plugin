@@ -43,7 +43,7 @@ class StepByStepLoader
      * Метод будет срабатывать когда вы находитесь в Админ панеле. Загрузка классов для Админ панели
      */
     public function admin(){
-
+        StepByStepMainAdminMenuController::newInstance();
     }
 
     /**

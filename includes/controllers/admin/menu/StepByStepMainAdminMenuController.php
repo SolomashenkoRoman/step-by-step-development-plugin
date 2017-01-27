@@ -43,7 +43,7 @@ class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuControlle
     public function render()
     {
         // TODO: Implement render() method.
-
+        _e("Hello world", STEPBYSTEP_PlUGIN_TEXTDOMAIN);
     }
 
     public static function newInstance()
