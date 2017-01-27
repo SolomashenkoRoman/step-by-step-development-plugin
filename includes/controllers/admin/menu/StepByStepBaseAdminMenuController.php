@@ -21,4 +21,5 @@ abstract class StepByStepBaseAdminMenuController
 
     abstract public function action();
     abstract public function render();
+    abstract public static function newInstance();
 }

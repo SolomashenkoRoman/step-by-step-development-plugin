@@ -8,6 +8,7 @@
 
 namespace includes\common;
 
+use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
 
