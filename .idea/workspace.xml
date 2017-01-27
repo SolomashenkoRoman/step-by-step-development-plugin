@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d1ed48-7644-40ca-9dd6-d58c0152b55d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminSubMenuController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/step-by-step-development-plugin.php" afterPath="$PROJECT_DIR$/step-by-step-development-plugin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common/StepByStepLoader.php" afterPath="$PROJECT_DIR$/includes/common/StepByStepLoader.php" />
     </list>
     <ignored path="step-by-step-development-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StepByStepLoader.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StepByStepLoader.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/common/StepByStepLoader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="75">
+              <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="e#129#199#0#PHP" expanded="true" />
               </folding>
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepByStepMainAdminSubMenuController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StepByStepMainAdminSubMenuController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminSubMenuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="37" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+            <state relative-caret-position="273">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,10 +80,10 @@
         <option value="$PROJECT_DIR$/includes/StepByStepPlugin.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepBaseAdminMenuController.php" />
         <option value="$PROJECT_DIR$/config-path.php" />
-        <option value="$PROJECT_DIR$/includes/common/StepByStepLoader.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php" />
         <option value="$PROJECT_DIR$/step-by-step-development-plugin.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminSubMenuController.php" />
+        <option value="$PROJECT_DIR$/includes/common/StepByStepLoader.php" />
       </list>
     </option>
   </component>
@@ -370,12 +368,12 @@
       <updated>1484507723976</updated>
       <workItem from="1484507728744" duration="29737000" />
       <workItem from="1485512757660" duration="9000" />
-      <workItem from="1485512769115" duration="6003000" />
+      <workItem from="1485512769115" duration="6225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35749000" />
+    <option name="totallyTimeSpent" value="35971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
@@ -580,16 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common/StepByStepLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-          <folding>
-            <element signature="e#129#199#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -600,9 +588,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminSubMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="37" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="273">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common/StepByStepLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#129#199#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

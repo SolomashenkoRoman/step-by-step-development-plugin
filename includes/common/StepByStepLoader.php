@@ -9,6 +9,7 @@
 namespace includes\common;
 
 use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
+use includes\controllers\admin\menu\StepByStepMainAdminSubMenuController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
 
@@ -44,6 +45,7 @@ class StepByStepLoader
      */
     public function admin(){
         StepByStepMainAdminMenuController::newInstance();
+        StepByStepMainAdminSubMenuController::newInstance();
     }
 
     /**
