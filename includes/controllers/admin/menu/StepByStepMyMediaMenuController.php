@@ -15,7 +15,7 @@ class StepByStepMyMediaMenuController extends StepByStepBaseAdminMenuController
     {
         // TODO: Implement action() method.
 
-        $pluginPage = add_posts_page(
+        $pluginPage = add_media_page(
             __('Sub media Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
             __('Sub media Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
             'read',
