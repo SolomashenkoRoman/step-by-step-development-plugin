@@ -17,6 +17,7 @@ use includes\controllers\admin\menu\StepByStepMyPagesMenuController;
 use includes\controllers\admin\menu\StepByStepMyPluginsMenuController;
 use includes\controllers\admin\menu\StepByStepMyPostsMenuController;
 use includes\controllers\admin\menu\StepByStepMyThemeMenuController;
+use includes\controllers\admin\menu\StepByStepMyToolsMenuController;
 use includes\controllers\admin\menu\StepByStepMyUsersMenuController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
@@ -62,6 +63,7 @@ class StepByStepLoader
         StepByStepMyThemeMenuController::newInstance();
         StepByStepMyPluginsMenuController::newInstance();
         StepByStepMyUsersMenuController::newInstance();
+        StepByStepMyToolsMenuController::newInstance();
 
     }
 
