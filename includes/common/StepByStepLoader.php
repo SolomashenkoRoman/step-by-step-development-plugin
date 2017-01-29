@@ -59,7 +59,7 @@ class StepByStepLoader
         StepByStepMyPagesMenuController::newInstance();
         StepByStepMyCommentsMenuController::newInstance();
         StepByStepMyThemeMenuController::newInstance();
-
+        StepByStepMyPluginsMenuController::newInstance();
 
     }
 
