@@ -48,6 +48,7 @@ class StepByStepLoader
         StepByStepMainAdminMenuController::newInstance();
         StepByStepMainAdminSubMenuController::newInstance();
         StepByStepMyDashboardMenuController::newInstance();
+
     }
 
     /**
