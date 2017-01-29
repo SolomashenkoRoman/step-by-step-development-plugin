@@ -10,6 +10,7 @@ namespace includes\common;
 
 use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
 use includes\controllers\admin\menu\StepByStepMainAdminSubMenuController;
+use includes\controllers\admin\menu\StepByStepMyCommentsMenuController;
 use includes\controllers\admin\menu\StepByStepMyDashboardMenuController;
 use includes\controllers\admin\menu\StepByStepMyMediaMenuController;
 use includes\controllers\admin\menu\StepByStepMyPagesMenuController;
@@ -54,6 +55,7 @@ class StepByStepLoader
         StepByStepMyPostsMenuController::newInstance();
         StepByStepMyMediaMenuController::newInstance();
         StepByStepMyPagesMenuController::newInstance();
+        StepByStepMyCommentsMenuController::newInstance();
 
     }
 

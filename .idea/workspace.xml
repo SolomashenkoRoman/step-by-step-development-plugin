@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d1ed48-7644-40ca-9dd6-d58c0152b55d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyCommentsMenuController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyThemeMenuController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common/StepByStepLoader.php" afterPath="$PROJECT_DIR$/includes/common/StepByStepLoader.php" />
     </list>
     <ignored path="step-by-step-development-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="StepByStepLoader.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/common/StepByStepLoader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="55" column="55" lean-forward="false" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+            <state relative-caret-position="255">
+              <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="42" />
               <folding>
                 <element signature="e#129#199#0#PHP" expanded="true" />
               </folding>
@@ -36,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepByStepMyCommentsMenuController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StepByStepMyCommentsMenuController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyCommentsMenuController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="39">
-              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="40" />
+              <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="38" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StepByStepMyThemeMenuController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyThemeMenuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -78,8 +89,9 @@
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyPostsMenuController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyMediaMenuController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyPagesMenuController.php" />
-        <option value="$PROJECT_DIR$/includes/common/StepByStepLoader.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyCommentsMenuController.php" />
+        <option value="$PROJECT_DIR$/includes/common/StepByStepLoader.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyThemeMenuController.php" />
       </list>
     </option>
   </component>
@@ -364,12 +376,12 @@
       <updated>1484507723976</updated>
       <workItem from="1484507728744" duration="29737000" />
       <workItem from="1485512757660" duration="9000" />
-      <workItem from="1485512769115" duration="10296000" />
+      <workItem from="1485512769115" duration="10570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40042000" />
+    <option name="totallyTimeSpent" value="40316000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
@@ -614,16 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common/StepByStepLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="55" column="55" lean-forward="false" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-          <folding>
-            <element signature="e#129#199#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyPagesMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -632,10 +634,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common/StepByStepLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="42" />
+          <folding>
+            <element signature="e#129#199#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyCommentsMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="40" />
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyThemeMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding />
         </state>
       </provider>
