@@ -11,26 +11,17 @@ namespace includes\controllers\admin\menu;
 
 class StepByStepMyDashboardMenuController extends StepByStepBaseAdminMenuController
 {
-
     public function action()
     {
         // TODO: Implement action() method.
 
         $pluginPage = add_dashboard_page(
-            STEPBYSTEP_PlUGIN_TEXTDOMAIN,
-            _x(
-                'Sub dashboard Step By Step',
-                'admin menu page' ,
-                STEPBYSTEP_PlUGIN_TEXTDOMAIN
-            ),
-            _x(
-                'Sub dashboard Step By Step',
-                'admin menu page' ,
-                STEPBYSTEP_PlUGIN_TEXTDOMAIN
-            ),
-            'manage_options',
+            __('Sub dashboard Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
+            __('Sub dashboard Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
+            'read',
             'step_by_step_control_sub_dashboard_menu',
-            array(&$this, 'render'));
+            array(&$this, 'render')
+        );
     }
 
     public function render()
