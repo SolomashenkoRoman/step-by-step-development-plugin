@@ -13,6 +13,7 @@ use includes\controllers\admin\menu\StepByStepMainAdminSubMenuController;
 use includes\controllers\admin\menu\StepByStepMyCommentsMenuController;
 use includes\controllers\admin\menu\StepByStepMyDashboardMenuController;
 use includes\controllers\admin\menu\StepByStepMyMediaMenuController;
+use includes\controllers\admin\menu\StepByStepMyOptionsMenuController;
 use includes\controllers\admin\menu\StepByStepMyPagesMenuController;
 use includes\controllers\admin\menu\StepByStepMyPluginsMenuController;
 use includes\controllers\admin\menu\StepByStepMyPostsMenuController;
@@ -64,6 +65,7 @@ class StepByStepLoader
         StepByStepMyPluginsMenuController::newInstance();
         StepByStepMyUsersMenuController::newInstance();
         StepByStepMyToolsMenuController::newInstance();
+        StepByStepMyOptionsMenuController::newInstance();
 
     }
 
