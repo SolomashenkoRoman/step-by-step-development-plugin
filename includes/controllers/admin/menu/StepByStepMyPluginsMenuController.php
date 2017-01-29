@@ -15,7 +15,7 @@ class StepByStepMyPluginsMenuController extends StepByStepBaseAdminMenuControlle
     {
         // TODO: Implement action() method.
 
-        $pluginPage = add_theme_page(
+        $pluginPage = add_plugins_page(
             __('Sub plugins Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
             __('Sub plugins Step By Step', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
             'read',
