@@ -15,6 +15,7 @@ use includes\controllers\admin\menu\StepByStepMyDashboardMenuController;
 use includes\controllers\admin\menu\StepByStepMyMediaMenuController;
 use includes\controllers\admin\menu\StepByStepMyPagesMenuController;
 use includes\controllers\admin\menu\StepByStepMyPostsMenuController;
+use includes\controllers\admin\menu\StepByStepMyThemeMenuController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
 
@@ -56,6 +57,7 @@ class StepByStepLoader
         StepByStepMyMediaMenuController::newInstance();
         StepByStepMyPagesMenuController::newInstance();
         StepByStepMyCommentsMenuController::newInstance();
+        StepByStepMyThemeMenuController::newInstance();
 
     }
 
