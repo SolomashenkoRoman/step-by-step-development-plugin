@@ -54,7 +54,7 @@ class StepByStepLoaderScript
 
         wp_register_script(
             STEPBYSTEP_PlUGIN_SLUG.'-AdminMain', //$handle
-            STEPBYSTEP_PlUGIN_URL.'assets/admin/js/admin/StepByStepAdminMain.js', //$src
+            STEPBYSTEP_PlUGIN_URL.'assets/admin/js/StepByStepAdminMain.js', //$src
             array(
                 'jquery'
             ), //$deps
