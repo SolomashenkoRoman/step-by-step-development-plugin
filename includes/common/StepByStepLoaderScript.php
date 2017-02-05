@@ -88,8 +88,20 @@ class StepByStepLoaderScript
         wp_enqueue_style(STEPBYSTEP_PlUGIN_SLUG.'-AdminMain');
 
     }
-    public function loadHeadScriptAdmin(){}
-    public function loadScriptSite($hook){}
+
+    public function loadHeadScriptAdmin(){
+        ?>
+            <script type="text/javascript">
+                var stepByStepAjaxUrl;
+                stepByStepAjaxUrl  = '<?php echo STEPBYSTEP_PlUGIN_AJAX_URL; ?>';
+            </script>
+        <?php
+    }
+
+    public function loadScriptSite($hook){
+        //Подключение скриптов для frontend
+    }
     public function loadHeadScriptSite(){}
+
     public function loadFooterScriptSite(){}
 }
