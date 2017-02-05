@@ -61,6 +61,11 @@ class StepByStepLoaderScript
             STEPBYSTEP_PlUGIN_VERSION, //$ver
             true //$$in_footer
         );
+        /**
+         * Добавляет скрипт, только если он еще не был добавлен и другие скрипты от которых он зависит зарегистрированы.
+         * Зависимые скрипты добавляются автоматически.
+         */
+        wp_enqueue_script(STEPBYSTEP_PlUGIN_SLUG.'-AdminMain');
     }
     public function loadHeadScriptAdmin(){}
     public function loadScriptSite($hook){}
