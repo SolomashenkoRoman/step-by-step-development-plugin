@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 
-abstract class StepByStepBaseAdminMenuController implements SingletonInterface
+abstract class StepByStepBaseAdminMenuController implements StepByStepIСreatorInstance
 {
     public function __construct(){
         /*
