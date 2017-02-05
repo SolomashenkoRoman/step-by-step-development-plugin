@@ -81,6 +81,7 @@ class StepByStepLoader
      */
     public function all(){
         StepByStepLocalization::getInstance();
+        StepByStepLoaderScript::getInstance();
         //$stepByStepExampleAction = StepByStepExampleAction::newInstance();
         /*$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
        $stepByStepExampleFilter->callMyFilter("Roman");
