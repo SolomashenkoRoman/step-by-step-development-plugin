@@ -45,7 +45,7 @@ class StepByStepRequestApi
      *                      Значение по умолчанию — true.
      * month — первый день месяца, в формате «YYYY-MM-DD».
      */
-    public function getCalendarPricesMonth($currency, $origin, $destination, $month){
+    public function getCalendarPricesMonth($currency, $origin, $destination, $month = ""){
         $requestURL = "";
         if ($currency == false || empty($currency)){
             $currency = "currency=RUB";
@@ -67,7 +67,8 @@ class StepByStepRequestApi
         } else {
             $month = "&month={$month}";
         }
-        $requestURL = self::STEPBYSTEP_API_V2."/prices/month-matrix?{$currency}{$origin}{$destination}{$month}";
+        $requestURL = self::STEPBYSTEP_API_V2."/prices/month-matrix?{$currency}{$origin}{$destination}{$month}"
+            .$this->getToken();
 
         return $this->requestAPI($requestURL);
     }

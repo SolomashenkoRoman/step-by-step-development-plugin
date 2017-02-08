@@ -6,8 +6,10 @@
  * Time: 15:26
  */
 
-namespace includes\controllers\admin\menu;
+namespace пше;
 
+
+use includes\common\StepByStepRequestApi;
 
 class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuController
 {
@@ -44,6 +46,8 @@ class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuControlle
     {
         // TODO: Implement render() method.
         _e("Hello world", STEPBYSTEP_PlUGIN_TEXTDOMAIN);
+        $reuestAPI = StepByStepRequestApi::getInstance();
+        var_dump($reuestAPI->getCalendarPricesMonth('RUB', 'MOW', 'LED'));
     }
 
     public static function newInstance()

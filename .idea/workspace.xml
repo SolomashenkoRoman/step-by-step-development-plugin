@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f7d1ed48-7644-40ca-9dd6-d58c0152b55d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/common/StepByStepRequestApi.php" afterPath="$PROJECT_DIR$/includes/common/StepByStepRequestApi.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php" afterPath="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php" />
     </list>
     <ignored path="step-by-step-development-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StepByStepRequestApi.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StepByStepRequestApi.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/common/StepByStepRequestApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StepByStepMainAdminMenuController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="49" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -81,7 +93,6 @@
         <option value="$PROJECT_DIR$/includes/example/StepByStepExampleAction.php" />
         <option value="$PROJECT_DIR$/includes/StepByStepPlugin.php" />
         <option value="$PROJECT_DIR$/config-path.php" />
-        <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php" />
         <option value="$PROJECT_DIR$/step-by-step-development-plugin.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminSubMenuController.php" />
         <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMyDashboardMenuController.php" />
@@ -103,6 +114,7 @@
         <option value="$PROJECT_DIR$/assets/admin/StepByStepAdminMain.css" />
         <option value="$PROJECT_DIR$/includes/common/StepByStepLoaderScript.php" />
         <option value="$PROJECT_DIR$/includes/common/StepByStepRequestApi.php" />
+        <option value="$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php" />
       </list>
     </option>
   </component>
@@ -451,16 +463,16 @@
       <workItem from="1485764994524" duration="20000" />
       <workItem from="1485975988680" duration="553000" />
       <workItem from="1486287492143" duration="10135000" />
-      <workItem from="1486409770451" duration="4980000" />
+      <workItem from="1486409770451" duration="5694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58039000" />
+    <option name="totallyTimeSpent" value="58753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1867" y="23" width="1867" height="1057" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28273973" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -468,7 +480,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19952494" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2630458" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -780,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminSubMenuController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -870,8 +875,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/common/StepByStepRequestApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state relative-caret-position="435">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="49" selection-end-column="74" />
           <folding />
         </state>
       </provider>
