@@ -11,6 +11,7 @@ namespace includes\common;
 
 class StepByStepRequestApi
 {
+    const STEPBYSTEP_API_V2 = "http://api.travelpayouts.com/v2";
     private static $instance = null;
     private function __construct(){
 
