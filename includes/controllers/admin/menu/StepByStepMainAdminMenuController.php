@@ -6,7 +6,7 @@
  * Time: 15:26
  */
 
-namespace пше;
+namespace includes\controllers\admin\menu;
 
 
 use includes\common\StepByStepRequestApi;
