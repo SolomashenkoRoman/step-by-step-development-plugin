@@ -11,11 +11,16 @@ namespace includes\controllers\site\shortcodes;
 
 use includes\common\StepByStepRequestApi;
 use includes\controllers\admin\menu\StepByStepIСreatorInstance;
+use includes\models\site\StepByStepCalendarPricesMonthShortcodeModel;
 
 class StepByStepCalendarPricesMonthShortcodeController extends StepByStepShortcodesController
     implements StepByStepIСreatorInstance
 {
-
+    public $model;
+    public function __construct() {
+        parent::__construct();
+        $this->model = StepByStepCalendarPricesMonthShortcodeModel::newInstance();
+    }
     /**
      * Функция в которой будем добалять шорткоды через функцию add_shortcode( $tag , $func );
      * @return mixed
@@ -62,8 +67,10 @@ class StepByStepCalendarPricesMonthShortcodeController extends StepByStepShortco
             'destination' => '',
             'month' => date('Y-m-d'),
         ), $atts, $tag );
-        $reuestAPI = StepByStepRequestApi::getInstance();
+        /*$reuestAPI = StepByStepRequestApi::getInstance();
         $data = $reuestAPI->getCalendarPricesMonth($atts['currency'], $atts['origin'],
+            $atts['destination'], $atts['month']);*/
+        $data = $this->model->getData($atts['currency'], $atts['origin'],
             $atts['destination'], $atts['month']);
         if ($data == false) return false;
         return $this->render($data);
