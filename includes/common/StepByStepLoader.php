@@ -20,6 +20,7 @@ use includes\controllers\admin\menu\StepByStepMyPostsMenuController;
 use includes\controllers\admin\menu\StepByStepMyThemeMenuController;
 use includes\controllers\admin\menu\StepByStepMyToolsMenuController;
 use includes\controllers\admin\menu\StepByStepMyUsersMenuController;
+use includes\controllers\site\shortcodes\StepByStepCalendarPricesMonthShortcodeController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
 
@@ -73,7 +74,7 @@ class StepByStepLoader
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
      */
     public function site(){
-
+        StepByStepCalendarPricesMonthShortcodeController::newInstance();
     }
 
     /**
