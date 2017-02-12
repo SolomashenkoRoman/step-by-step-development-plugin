@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f7d1ed48-7644-40ca-9dd6-d58c0152b55d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/StepByStepPlugin.php" afterPath="$PROJECT_DIR$/includes/StepByStepPlugin.php" />
-    </list>
+    <list default="true" id="f7d1ed48-7644-40ca-9dd6-d58c0152b55d" name="Default" comment="" />
     <ignored path="step-by-step-development-plugin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -23,68 +21,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StepByStepCalendarPricesMonthShortcodeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/controllers/site/shortcodes/StepByStepCalendarPricesMonthShortcodeController.php">
+      <file leaf-file-name="StepByStepMainAdminMenuController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding>
-                <element signature="e#144#185#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StepByStepICreatorInstance.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepICreatorInstance.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="144">
+              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="39" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StepByStepDefaultOption.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/common/StepByStepDefaultOption.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StepByStepPlugin.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/StepByStepPlugin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="54" selection-end-column="56" />
-              <folding>
-                <element signature="e#122#166#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StepByStepBaseAdminMenuController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepBaseAdminMenuController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="18" column="59" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StepByStepCalendarPricesMonthShortcodeModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/models/site/StepByStepCalendarPricesMonthShortcodeModel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-              <folding>
-                <element signature="e#128#169#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -463,12 +405,12 @@
       <workItem from="1486409770451" duration="5768000" />
       <workItem from="1486643791842" duration="76000" />
       <workItem from="1486643871309" duration="7031000" />
-      <workItem from="1486935380504" duration="2627000" />
+      <workItem from="1486935380504" duration="2834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68561000" />
+    <option name="totallyTimeSpent" value="68768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
@@ -821,13 +763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/controllers/site/shortcodes/StepByStepShortcodesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -860,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/site/shortcodes/StepByStepCalendarPricesMonthShortcodeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#144#185#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/models/site/StepByStepCalendarPricesMonthShortcodeModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -877,14 +802,6 @@
           <folding>
             <element signature="e#128#169#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepICreatorInstance.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -906,11 +823,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/StepByStepPlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="327">
           <caret line="53" column="6" lean-forward="false" selection-start-line="53" selection-start-column="6" selection-end-line="54" selection-end-column="56" />
           <folding>
             <element signature="e#122#166#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/site/shortcodes/StepByStepCalendarPricesMonthShortcodeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#144#185#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepICreatorInstance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/controllers/admin/menu/StepByStepMainAdminMenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
