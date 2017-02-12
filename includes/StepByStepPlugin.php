@@ -15,6 +15,7 @@ use includes\common\StepByStepLoader;
 class StepByStepPlugin
 {
     private static $instance = null;
+
     private function __construct() {
         StepByStepLoader::getInstance();
         add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
