@@ -10,9 +10,9 @@ namespace includes\models\site;
 
 
 use includes\common\StepByStepRequestApi;
-use includes\controllers\admin\menu\StepByStepIСreatorInstance;
+use includes\controllers\admin\menu\StepByStepICreatorInstance;
 
-class StepByStepCalendarPricesMonthShortcodeModel implements StepByStepIСreatorInstance
+class StepByStepCalendarPricesMonthShortcodeModel implements StepByStepICreatorInstance
 {
 
     public function __construct() {

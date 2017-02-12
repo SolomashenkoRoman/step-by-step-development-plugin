@@ -10,11 +10,11 @@ namespace includes\controllers\site\shortcodes;
 
 
 use includes\common\StepByStepRequestApi;
-use includes\controllers\admin\menu\StepByStepIСreatorInstance;
+use includes\controllers\admin\menu\StepByStepICreatorInstance;
 use includes\models\site\StepByStepCalendarPricesMonthShortcodeModel;
 
 class StepByStepCalendarPricesMonthShortcodeController extends StepByStepShortcodesController
-    implements StepByStepIСreatorInstance
+    implements StepByStepICreatorInstance
 {
     public $model;
     public function __construct() {
