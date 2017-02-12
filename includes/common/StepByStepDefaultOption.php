@@ -11,6 +11,10 @@ namespace includes\common;
 
 class StepByStepDefaultOption
 {
+    /**
+     * Возвращает массив дефолтных настроек
+     * @return array
+     */
     public static function getDefaultOptions()
     {
         $defaults = array(
@@ -19,6 +23,7 @@ class StepByStepDefaultOption
                 'token' => ''
             )
         );
+        // Фильтр которому можно подключиться и изменить массив дефолтных настроек
         $defaults = apply_filters('step_by_step_default_option', $defaults );
         return $defaults;
     }
