@@ -51,6 +51,8 @@ class StepByStepPlugin
     {
         // debug.log
         error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' deactivation');
+        delete_option(STEPBYSTEP_PlUGIN_OPTION_NAME);
+        delete_option(STEPBYSTEP_PlUGIN_OPTION_VERSION);
     }
 
 }
