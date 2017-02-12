@@ -9,7 +9,9 @@
 namespace includes\models\admin\menu;
 
 
-class StepByStepMainAdminMenuModel
+use includes\controllers\admin\menu\StepByStepICreatorInstance;
+
+class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
 {
 
     public function __construct(){
@@ -39,4 +41,10 @@ class StepByStepMainAdminMenuModel
 
     }
 
+    public static function newInstance()
+    {
+        // TODO: Implement newInstance() method.
+        $instance = new self;
+        return $instance;
+    }
 }

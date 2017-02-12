@@ -10,9 +10,15 @@ namespace includes\controllers\admin\menu;
 
 
 use includes\common\StepByStepRequestApi;
+use includes\models\admin\menu\StepByStepMainAdminMenuModel;
 
 class StepByStepMainAdminMenuController extends StepByStepBaseAdminMenuController
 {
+    public $model;
+    public function __construct(){
+        parent::__construct();
+        $this->model = StepByStepMainAdminMenuModel::newInstance();
+    }
 
     public function action()
     {
