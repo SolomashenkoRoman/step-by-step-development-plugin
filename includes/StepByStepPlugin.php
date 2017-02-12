@@ -8,6 +8,7 @@
  */
 namespace includes;
 
+use includes\common\StepByStepDefaultOption;
 use includes\common\StepByStepLoader;
 
 
@@ -16,6 +17,7 @@ class StepByStepPlugin
     private static $instance = null;
     private function __construct() {
         StepByStepLoader::getInstance();
+        add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
     }
     public static function getInstance() {
 
@@ -25,6 +27,18 @@ class StepByStepPlugin
 
         return self::$instance;
 
+    }
+
+    /**
+     * Если не созданные настройки установить по умолчанию
+     */
+    public function setDefaultOptions(){
+        if( ! get_option(STEPBYSTEP_PlUGIN_OPTION_NAME) ){
+            update_option( STEPBYSTEP_PlUGIN_OPTION_NAME, StepByStepDefaultOption::getDefaultOptions() );
+        }
+        if( ! get_option(STEPBYSTEP_PlUGIN_OPTION_VERSION) ){
+            update_option(STEPBYSTEP_PlUGIN_OPTION_VERSION, STEPBYSTEP_PlUGIN_VERSION);
+        }
     }
 
     static public function activation()
