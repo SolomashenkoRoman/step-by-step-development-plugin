@@ -30,6 +30,9 @@ class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
         // register_setting( $option_group, $option_name, $sanitize_callback );
         // Регистрирует новую опцию
         register_setting('StepByStepMainSettings', STEPBYSTEP_PlUGIN_OPTION_NAME, array(&$this, 'saveOption'));
+        // add_settings_section( $id, $title, $callback, $page );
+        // Добавление секции опций
+        add_settings_section( 'step_by_step_account_id', __('Account', STEPBYSTEP_PlUGIN_TEXTDOMAIN), '', 'step_by_step_main' );
 
     }
 
@@ -39,8 +42,7 @@ class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
      */
     public function saveOption($input)
     {
-
-
+        return $input;
     }
 
     public static function newInstance()
