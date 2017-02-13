@@ -32,10 +32,42 @@ class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
         register_setting('StepByStepMainSettings', STEPBYSTEP_PlUGIN_OPTION_NAME, array(&$this, 'saveOption'));
         // add_settings_section( $id, $title, $callback, $page );
         // Добавление секции опций
-        add_settings_section( 'step_by_step_account_id', __('Account', STEPBYSTEP_PlUGIN_TEXTDOMAIN), '', 'step_by_step_main' );
+        add_settings_section( 'step_by_step_account_section_id', __('Account', STEPBYSTEP_PlUGIN_TEXTDOMAIN), '', 'step_by_step_main' );
+        // add_settings_field( $id, $title, $callback, $page, $section, $args );
+        // Добавление полей опций
+        add_settings_field(
+            'step_by_step_token_field_id',
+            __('Token', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
+            array(&$this, 'tokenField'),
+            'step_by_step_main',
+            'step_by_step_account_section_id'
+        );
+        add_settings_field(
+            'step_by_step_marker_field_id',
+            __('Marker', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
+            array(&$this, 'tokenMarker'),
+            'step_by_step_main',
+            'step_by_step_account_section_id'
+        );
 
     }
 
+    public function tokenField(){
+        $option = get_option(STEPBYSTEP_PlUGIN_OPTION_NAME);
+        ?>
+            <input type="text"
+                   name="<?php echo STEPBYSTEP_PlUGIN_OPTION_NAME; ?>[account]['token']"
+                   value="<?php echo esc_attr( $option['account']['token'] ) ?>" />
+        <?php
+    }
+    public function markerField(){
+        $option = get_option(STEPBYSTEP_PlUGIN_OPTION_NAME);
+        ?>
+        <input type="text"
+               name="<?php echo STEPBYSTEP_PlUGIN_OPTION_NAME; ?>[account]['marker']"
+               value="<?php echo esc_attr( $option['account']['marker'] ) ?>" />
+        <?php
+    }
     /**
      * Сохранение опции
      * @param $input
