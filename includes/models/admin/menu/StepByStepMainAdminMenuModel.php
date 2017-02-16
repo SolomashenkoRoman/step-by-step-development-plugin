@@ -57,15 +57,16 @@ class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
         $option = get_option(STEPBYSTEP_PlUGIN_OPTION_NAME);
         ?>
             <input type="text"
-                   name="<?php echo STEPBYSTEP_PlUGIN_OPTION_NAME; ?>[account]['token']"
+                   name="<?php echo STEPBYSTEP_PlUGIN_OPTION_NAME; ?>[account][token]"
                    value="<?php echo esc_attr( $option['account']['token'] ) ?>" />
         <?php
     }
     public function markerField(){
         $option = get_option(STEPBYSTEP_PlUGIN_OPTION_NAME);
+        //var_dump($option);
         ?>
         <input type="text"
-               name="<?php echo STEPBYSTEP_PlUGIN_OPTION_NAME; ?>[account]['marker']"
+               name="<?php echo STEPBYSTEP_PlUGIN_OPTION_NAME; ?>[account][marker]"
                value="<?php echo esc_attr( $option['account']['marker'] ) ?>" />
         <?php
     }
