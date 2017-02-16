@@ -10,6 +10,7 @@ namespace includes;
 
 use includes\common\StepByStepDefaultOption;
 use includes\common\StepByStepLoader;
+use includes\models\admin\menu\StepByStepGuestBookSubMenuModel;
 
 
 class StepByStepPlugin
@@ -19,6 +20,7 @@ class StepByStepPlugin
     private function __construct() {
         StepByStepLoader::getInstance();
         add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
+
     }
     public static function getInstance() {
 
@@ -46,6 +48,7 @@ class StepByStepPlugin
     {
         // debug.log
         error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' activation');
+        StepByStepGuestBookSubMenuModel::createTable();
     }
 
     static public function deactivation()
