@@ -15,6 +15,21 @@ class StepByStepGuestBookSubMenuController extends StepByStepBaseAdminMenuContro
     public function action()
     {
         // TODO: Implement action() method.
+        $pluginPage = add_submenu_page(
+            STEPBYSTEP_PlUGIN_TEXTDOMAIN,
+            _x(
+                'Guest book',
+                'admin menu page' ,
+                STEPBYSTEP_PlUGIN_TEXTDOMAIN
+            ),
+            _x(
+                'Guest book',
+                'admin menu page' ,
+                STEPBYSTEP_PlUGIN_TEXTDOMAIN
+            ),
+            'manage_options',
+            'step_by_step_control_sub_menu',
+            array(&$this, 'render'));
     }
 
     public function render()
@@ -25,5 +40,7 @@ class StepByStepGuestBookSubMenuController extends StepByStepBaseAdminMenuContro
     public static function newInstance()
     {
         // TODO: Implement newInstance() method.
+        $instance = new self;
+        return $instance;
     }
 }
