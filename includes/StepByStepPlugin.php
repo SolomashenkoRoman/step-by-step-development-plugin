@@ -48,6 +48,7 @@ class StepByStepPlugin
     {
         // debug.log
         error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' activation');
+        //Создание таблицы Гостевой книги
         StepByStepGuestBookSubMenuModel::createTable();
 
 
