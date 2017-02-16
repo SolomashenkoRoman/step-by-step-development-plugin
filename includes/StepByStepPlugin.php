@@ -49,6 +49,8 @@ class StepByStepPlugin
         // debug.log
         error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' activation');
         StepByStepGuestBookSubMenuModel::createTable();
+
+
     }
 
     static public function deactivation()
