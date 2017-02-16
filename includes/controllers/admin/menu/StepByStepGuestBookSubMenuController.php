@@ -73,11 +73,26 @@ class StepByStepGuestBookSubMenuController extends StepByStepBaseAdminMenuContro
                 break;
             // Подгружаем view для редактирование данных в таблицу
             case "edit_data":
+                if(isset($_GET['id']) && !empty($_GET['id'])){
+                    $data = StepByStepGuestBookSubMenuModel::getById((int)$_GET['id']);
+                    $pathView .= "/includes/views/admin/menu/StepByStepGuestBookSubMenuEdit.view.php";
+                    $this->loadView($pathView, 0, $data);
+                } 
 
                 break;
             // Обновление редактированых данных в таблице
             case "update_data":
-
+                //var_dump($_POST);
+                 if (isset($_POST)){
+                    StepByStepGuestBookSubMenuModel::updateById(
+                        array(
+                           'user_name' => $_POST['user_name'],            
+                            'date_add' => time(),
+                            'message' => $_POST['message']
+                        ), $_POST['id']
+                    );
+                    $this->redirect("admin.php?page=step_by_step_control_guest_book_menu");
+                 }
                 break;
             // Удаление данных
             case "delete_data":
