@@ -81,7 +81,10 @@ class StepByStepGuestBookSubMenuController extends StepByStepBaseAdminMenuContro
                 break;
             // Удаление данных
             case "delete_data":
-
+                if(isset($_GET['id']) && !empty($_GET['id'])){
+                    StepByStepGuestBookSubMenuModel::deleteById((int)$_GET['id']);
+                }
+                $this->redirect("admin.php?page=step_by_step_control_guest_book_menu");
                 break;
             default:
                 //Получение всех записей в таблице чтобы отобразить их view
