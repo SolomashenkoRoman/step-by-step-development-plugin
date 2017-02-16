@@ -15,6 +15,7 @@ class StepByStepGuestBookSubMenuController extends StepByStepBaseAdminMenuContro
     public function action()
     {
         // TODO: Implement action() method.
+        //Добавление пункта меню
         $pluginPage = add_submenu_page(
             STEPBYSTEP_PlUGIN_TEXTDOMAIN,
             _x(
