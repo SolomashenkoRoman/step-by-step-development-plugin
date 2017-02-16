@@ -29,13 +29,17 @@ class StepByStepGuestBookSubMenuController extends StepByStepBaseAdminMenuContro
                 STEPBYSTEP_PlUGIN_TEXTDOMAIN
             ),
             'manage_options',
-            'step_by_step_control_sub_menu',
+            'step_by_step_control_guest_book_menu',
             array(&$this, 'render'));
     }
 
     public function render()
     {
         // TODO: Implement render() method.
+        //Данные которые будут передаваться в view
+        $data = array();
+        $pathView = STEPBYSTEP_PlUGIN_DIR."/includes/views/admin/menu/StepByStepGuestBookSubMenu.view.php";
+        $this->loadView($pathView, 0, $data);
     }
 
     public static function newInstance()
