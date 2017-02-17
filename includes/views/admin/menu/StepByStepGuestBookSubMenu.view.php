@@ -1,3 +1,6 @@
+<!-- Ссылка ссылаеться на страницу гостевой книги только у нее добавлен $_GET['action'] параметр &action=add_data
+    По этому параметру мы будем в методе render определять что делать
+ -->
 <a href="admin.php?page=step_by_step_control_guest_book_menu&action=add_data">
     <?php _e('Add', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
 </a>
@@ -20,6 +23,7 @@
     </tr>
     </thead>
     <tbody>
+    <!-- Проверка данных на пустоту чтобы цыкл не вернул ошибку -->
     <?php if(count($data) > 0 && $data !== false){  ?>
         <?php foreach($data as $value): ?>
             <tr class="row table_box">
@@ -35,6 +39,10 @@
                 </td>
 
                 <td>
+                    <!-- Ссылки  ссылаються на страницу гостевой книги только у них добавлен $_GET['action'] параметр
+                     для редактирования &action=edit_data для удаления &action=delete_data и в этих ссылок еще добавлен
+                     один $_GET['id'] параметр это &id=(id записи) записи гостевой книги по котором мы будем выполнять
+                     действия -->
                     <a href="admin.php?page=step_by_step_control_guest_book_menu&action=edit_data&id=<?php echo $value['id'];?>">
                         <?php _e('Edit', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
                     </a>
