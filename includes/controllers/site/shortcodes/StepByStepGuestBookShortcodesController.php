@@ -77,8 +77,11 @@ class StepByStepGuestBookShortcodesController extends StepByStepShortcodesContro
         return $output;
     }
 
+    // Метод создает экземпляр класса
     public static function newInstance()
     {
         // TODO: Implement newInstance() method.
+        $instance = new self;
+        return $instance;
     }
 }
