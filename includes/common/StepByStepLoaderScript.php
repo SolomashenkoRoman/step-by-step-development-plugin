@@ -100,6 +100,22 @@ class StepByStepLoaderScript
 
     public function loadScriptSite($hook){
         //Подключение скриптов для frontend
+        //$version = STEPBYSTEP_PlUGIN_VERSION;
+        $version = null;
+        wp_register_script(
+            STEPBYSTEP_PlUGIN_SLUG.'-Main', //$handle
+            STEPBYSTEP_PlUGIN_URL.'assets/site/js/StepByStepMain.js', //$src
+            array(
+                'jquery'
+            ), //$deps
+            $version, //$ver
+            true //$$in_footer
+        );
+        /**
+         * Добавляет скрипт, только если он еще не был добавлен и другие скрипты от которых он зависит зарегистрированы.
+         * Зависимые скрипты добавляются автоматически.
+         */
+        wp_enqueue_script(STEPBYSTEP_PlUGIN_SLUG.'-Main');
     }
     public function loadHeadScriptSite(){}
 

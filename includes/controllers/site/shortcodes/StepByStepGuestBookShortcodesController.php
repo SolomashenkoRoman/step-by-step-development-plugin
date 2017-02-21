@@ -29,7 +29,6 @@ class StepByStepGuestBookShortcodesController extends StepByStepShortcodesContro
             add_action('wp_ajax_nopriv_guest_book',  array( &$this, 'ajaxHandler'));
         }
 
-        // Переменная ajaxurl
 
 
     }
