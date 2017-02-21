@@ -17,9 +17,31 @@ class StepByStepGuestBookDashboardWidget implements StepByStepICreatorInstance
     public function __construct() {
         // Регистрация виджета консоли
         add_action( 'wp_dashboard_setup', array( &$this, 'addDashboardWidgets' ) );
+        add_action( 'wp_dashboard_setup', array( &$this, 'removeDashboardWidgets' ) );
     }
+    // Удаление виджета консоли
+    public function removeDashboardWidgets(){
+        /**
+         * Удаляет Блоки на страницах редактирования/создания постов, постоянных страниц и произвольных типов записей.
+         * remove_meta_box( $id, $screen, $context );
+         */
+        remove_meta_box('dashboard_quick_press', 'dashboard', 'side');
+    }
+
+
     // Используется в хуке
     public function addDashboardWidgets(){
+
+        // Продвинутое использование: добавление виджета в боковой столбец
+        add_meta_box(
+            'step_by_step_guest_book_dashboard_widget_new',
+            __('Guest book new', STEPBYSTEP_PlUGIN_TEXTDOMAIN),
+            array( &$this, 'renderDashboardWidget' ),
+            'dashboard',
+            'side',
+            'high'
+        );
+
         wp_add_dashboard_widget(
             'step_by_step_guest_book_dashboard_widget',         // Идентификатор виджета.
             __('Guest book', STEPBYSTEP_PlUGIN_TEXTDOMAIN),           // Заголовок виджета.
