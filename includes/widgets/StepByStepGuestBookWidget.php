@@ -9,6 +9,8 @@
 
 namespace includes\widgets;
 
+use includes\models\admin\menu\StepByStepGuestBookSubMenuModel;
+
 class StepByStepGuestBookWidget extends \WP_Widget
 {
     public function __construct() {
@@ -70,5 +72,68 @@ class StepByStepGuestBookWidget extends \WP_Widget
         $values["text"] = htmlentities($newInstance["text"]);
         return $values;
     }
+
+    /**
+     * @param $args
+     * @param $instance
+     */
+    public function widget($args, $instance) {
+        $title = $instance["title"];
+        $text = $instance["text"];
+
+        echo "<h2>$title</h2>";
+        echo "<p>$text</p>";
+
+        // Вывод таблички гостевой книги
+        $data = StepByStepGuestBookSubMenuModel::getAll();
+        ?>
+        <table  border="1">
+            <thead>
+            <tr>
+                <td>
+                    <?php _e('Name', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
+                </td>
+                <td>
+                    <?php _e('Messsage', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
+                </td>
+                <td>
+                    <?php _e('Date', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
+                </td>
+
+            </tr>
+            </thead>
+            <tbody>
+        <?php if(count($data) > 0 && $data !== false){  ?>
+            <?php foreach($data as $value): ?>
+                <tr class="row table_box">
+
+                    <td>
+                        <?php echo $value['user_name']; ?>
+                    </td>
+                    <td>
+                        <?php echo $value['message']; ?>
+                    </td>
+                    <td>
+                        <?php echo date('d-m-Y H:i', $value['date_add']); ?>
+                    </td>
+
+
+
+                </tr>
+            <?php endforeach ?>
+        <?php }else{ ?>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        <?php } ?>
+        </tbody>
+        </table>
+        <?php
+
+    }
+
 
 }
