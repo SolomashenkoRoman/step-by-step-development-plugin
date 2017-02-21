@@ -23,7 +23,8 @@ jQuery(function($) {
 
         // Отправка данных ajax обработчику (wp_ajax_guest_book, wp_ajax_nopriv_guest_book)
         $.post( ajaxurl, data, function(response) {
-            alert('Получено с сервера: ' + response);
+            alert('Получено с сервера: ' + response.data.message);
+            console.log(response);
         });
 
         // Запрещаем отправление формы что бы страница не перезагружалась

@@ -9,6 +9,7 @@
 namespace includes\ajax;
 
 use includes\controllers\admin\menu\StepByStepICreatorInstance;
+use includes\models\admin\menu\StepByStepGuestBookSubMenuModel;
 
 class StepByStepGuestBookAjaxHandler implements StepByStepICreatorInstance
 {
@@ -26,6 +27,24 @@ class StepByStepGuestBookAjaxHandler implements StepByStepICreatorInstance
     public function ajaxHandler(){
 
         error_log('ajaxHandler');
+        // Проверка наличия данных
+        if ($_POST){
+            //Добавляем данные
+            $id = StepByStepGuestBookSubMenuModel::insert(array(
+                'user_name' => $_POST['user_name'],
+                'date_add' => time(), // time() стандартная php функция получения времени
+                'message' => $_POST['message']
+            ));
+            $return = array(
+                'message'   => 'Сохранено',
+                'ID'        => $id
+            );
+            // Возвращаем ответ
+            wp_send_json_success( $return );
+        }
+
+        wp_send_json_error();
+        wp_die();
     }
 
     public static function newInstance()
