@@ -22,6 +22,7 @@ use includes\controllers\admin\menu\StepByStepMyThemeMenuController;
 use includes\controllers\admin\menu\StepByStepMyToolsMenuController;
 use includes\controllers\admin\menu\StepByStepMyUsersMenuController;
 use includes\controllers\site\shortcodes\StepByStepCalendarPricesMonthShortcodeController;
+use includes\controllers\site\shortcodes\StepByStepGuestBookShortcodesController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
 
@@ -77,6 +78,8 @@ class StepByStepLoader
      */
     public function site(){
         StepByStepCalendarPricesMonthShortcodeController::newInstance();
+        // Шорткод для формы гостевой книги
+        StepByStepGuestBookShortcodesController::newInstance();
     }
 
     /**
