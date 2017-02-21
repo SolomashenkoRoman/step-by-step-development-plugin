@@ -10,6 +10,7 @@ namespace includes\widgets;
 
 
 use includes\controllers\admin\menu\StepByStepICreatorInstance;
+use includes\models\admin\menu\StepByStepGuestBookSubMenuModel;
 
 class StepByStepGuestBookDashboardWidget implements StepByStepICreatorInstance
 {
@@ -27,7 +28,55 @@ class StepByStepGuestBookDashboardWidget implements StepByStepICreatorInstance
     }
     // Выводит контент
     public function renderDashboardWidget(){
-        echo 'Hello';
+        // Запрашиваем данные из таблицы
+        $data = StepByStepGuestBookSubMenuModel::getAll();
+        // Вывод данных
+        ?>
+        <table  border="1">
+            <thead>
+            <tr>
+                <td>
+                    <?php _e('Name', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
+                </td>
+                <td>
+                    <?php _e('Messsage', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
+                </td>
+                <td>
+                    <?php _e('Date', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>
+                </td>
+
+            </tr>
+            </thead>
+            <tbody>
+            <?php if(count($data) > 0 && $data !== false){  ?>
+                <?php foreach($data as $value): ?>
+                    <tr class="row table_box">
+
+                        <td>
+                            <?php echo $value['user_name']; ?>
+                        </td>
+                        <td>
+                            <?php echo $value['message']; ?>
+                        </td>
+                        <td>
+                            <?php echo date('d-m-Y H:i', $value['date_add']); ?>
+                        </td>
+
+
+
+                    </tr>
+                <?php endforeach ?>
+            <?php }else{ ?>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            <?php } ?>
+            </tbody>
+        </table>
+        <?php
     }
 
     public static function newInstance()

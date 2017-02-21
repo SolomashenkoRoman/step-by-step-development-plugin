@@ -72,6 +72,7 @@ class StepByStepLoader
         StepByStepMyToolsMenuController::newInstance();
         StepByStepMyOptionsMenuController::newInstance();
         StepByStepGuestBookSubMenuController::newInstance();
+        // Подключаем виджет гостевой книги
         StepByStepGuestBookDashboardWidget::newInstance();
 
 
