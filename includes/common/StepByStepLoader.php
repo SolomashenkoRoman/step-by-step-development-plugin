@@ -8,6 +8,7 @@
 
 namespace includes\common;
 
+use includes\ajax\StepByStepGuestBookAjaxHandler;
 use includes\controllers\admin\menu\StepByStepGuestBookSubMenuController;
 use includes\controllers\admin\menu\StepByStepMainAdminMenuController;
 use includes\controllers\admin\menu\StepByStepMainAdminSubMenuController;
@@ -82,12 +83,14 @@ class StepByStepLoader
         StepByStepGuestBookShortcodesController::newInstance();
     }
 
+
     /**
      * Метод будет срабатывать везде. Загрузка классов для Админ панеле и Сайта
      */
     public function all(){
         StepByStepLocalization::getInstance();
         StepByStepLoaderScript::getInstance();
+        //StepByStepGuestBookAjaxHandler::newInstance();
         //$stepByStepExampleAction = StepByStepExampleAction::newInstance();
         /*$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
        $stepByStepExampleFilter->callMyFilter("Roman");

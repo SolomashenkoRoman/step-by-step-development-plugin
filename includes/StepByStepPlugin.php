@@ -21,7 +21,10 @@ class StepByStepPlugin
         StepByStepLoader::getInstance();
         add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
 
+
+
     }
+
     public static function getInstance() {
 
         if ( null == self::$instance ) {

@@ -17,30 +17,6 @@ class StepByStepGuestBookShortcodesController extends StepByStepShortcodesContro
     implements StepByStepICreatorInstance
 {
 
-    // Переопределим конструктор
-    public function __construct(){
-        // Вызов конструктора класса StepByStepShortcodesController
-        // Чтобы прикрепить функцию к действию add_action( 'wp_loaded',  array( &$this, 'initShortcode') );
-        parent::__construct();
-
-        // подключаем AJAX обработчики, только когда в этом есть смысл
-        if( defined('DOING_AJAX') && DOING_AJAX ){
-            add_action('wp_ajax_guest_book', array( &$this, 'ajaxHandler'));
-            add_action('wp_ajax_nopriv_guest_book',  array( &$this, 'ajaxHandler'));
-        }
-
-
-
-    }
-
-    /**
-     * Обработчик для ajax действия guest_book (wp_ajax_guest_book, wp_ajax_nopriv_guest_book)
-     */
-    public function ajaxHandler(){
-
-    }
-
-
     /**
      * Функция в которой будем добалять шорткоды через функцию add_shortcode( $tag , $func );
      * @return mixed
@@ -93,9 +69,9 @@ class StepByStepGuestBookShortcodesController extends StepByStepShortcodesContro
         $output = '';
         $output .= '<form  method="post">
                         <label>'.__('User name', STEPBYSTEP_PlUGIN_TEXTDOMAIN ).'</label>
-                        <input type="text" name="step_user_name">
+                        <input type="text" name="step_user_name" class="step-user-name">
                         <label>'.__('Message', STEPBYSTEP_PlUGIN_TEXTDOMAIN ).'</label>
-                        <textarea name="step_message"></textarea>
+                        <textarea name="step_message" class="step-message"></textarea>
                         <button class="step-by-steb-btn-add" >'.__('Add', STEPBYSTEP_PlUGIN_TEXTDOMAIN ).'</button>                   
                     </form>';
         return $output;
