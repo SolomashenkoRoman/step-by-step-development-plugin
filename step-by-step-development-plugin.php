@@ -30,6 +30,8 @@ require_once plugin_dir_path(__FILE__) . '/config-path.php';
 require_once STEPBYSTEP_PlUGIN_DIR.'/includes/common/StepByStepAutoload.php';
 require_once STEPBYSTEP_PlUGIN_DIR.'/includes/StepByStepPlugin.php';
 
+//Регистрация виджета
+add_action('widgets_init', create_function('', 'return register_widget("includes\widgets\StepByStepGuestBookWidget");'));
 
 register_activation_hook( __FILE__, array('includes\StepByStepPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\StepByStepPlugin' ,  'deactivation' ) );

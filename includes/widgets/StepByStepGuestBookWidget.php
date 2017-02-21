@@ -9,7 +9,7 @@
 
 namespace includes\widgets;
 
-class StepByStepGuestBookWidget extends WP_Widget
+class StepByStepGuestBookWidget extends \WP_Widget
 {
     public function __construct() {
 
