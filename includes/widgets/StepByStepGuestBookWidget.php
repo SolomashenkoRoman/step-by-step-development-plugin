@@ -57,4 +57,17 @@ class StepByStepGuestBookWidget extends \WP_Widget
         echo '<textarea id="' . $textId . '" name="' . $textName .
             '">' . $text . '</textarea>';
     }
+
+    /**
+     * @param $newInstance
+     * @param $oldInstance
+     * @return array
+     */
+    public function update($newInstance, $oldInstance) {
+        $values = array();
+        $values["title"] = htmlentities($newInstance["title"]);
+        $values["text"] = htmlentities($newInstance["text"]);
+        return $values;
+    }
+
 }
