@@ -25,6 +25,25 @@ class StepByStepGuestBookDashboardWidget implements StepByStepICreatorInstance
             __('Guest book', STEPBYSTEP_PlUGIN_TEXTDOMAIN),           // Заголовок виджета.
             array( &$this, 'renderDashboardWidget'  ) // Функция отображения.
         );
+
+        // Объявляем глобальный массив метабоксов, содержащий все виджеты административной понели WordPress
+        global $wp_meta_boxes;
+
+        // Получаем нормальный массив виджетов консоли
+        // (который уже содержит наш виджет в самом конце)
+        $normal_dashboard = $wp_meta_boxes['dashboard']['normal']['core'];
+
+        // Сохраняем старую версию массива и удаляем наш виджет из конца массива
+        $example_widget_backup = array('step_by_step_guest_book_dashboard_widget' => $normal_dashboard['step_by_step_guest_book_dashboard_widget']);
+        unset($normal_dashboard['step_by_step_guest_book_dashboard_widget']);
+
+        // Объединяем два массива вместе таким образом, что наш виджет оказывается в начале
+        $sorted_dashboard = array_merge($example_widget_backup, $normal_dashboard);
+
+        // Сохраняем отсортированный массив обратно в метабокс
+        $wp_meta_boxes['dashboard']['normal']['core'] = $sorted_dashboard;
+
+
     }
     // Выводит контент
     public function renderDashboardWidget(){
