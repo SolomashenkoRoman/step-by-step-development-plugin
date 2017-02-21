@@ -116,6 +116,12 @@ class StepByStepLoaderScript
          * Зависимые скрипты добавляются автоматически.
          */
         wp_enqueue_script(STEPBYSTEP_PlUGIN_SLUG.'-Main');
+        // Добавим ajaxurl переменую до скрипта будем использовать функцию
+        // wp_add_inline_script( $handle, $data, $position );
+
+        $data = 'var ajaxurl = "'.STEPBYSTEP_PlUGIN_AJAX_URL.'";';
+
+        wp_add_inline_script( STEPBYSTEP_PlUGIN_SLUG.'-Main', $data, 'before' );
     }
     public function loadHeadScriptSite(){}
 
