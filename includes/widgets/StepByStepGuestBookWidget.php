@@ -63,6 +63,7 @@ class StepByStepGuestBookWidget extends \WP_Widget
      * @param $oldInstance
      * @return array
      */
+
     public function update($newInstance, $oldInstance) {
         $values = array();
         $values["title"] = htmlentities($newInstance["title"]);
