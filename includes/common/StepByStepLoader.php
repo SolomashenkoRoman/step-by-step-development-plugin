@@ -90,7 +90,8 @@ class StepByStepLoader
     public function all(){
         StepByStepLocalization::getInstance();
         StepByStepLoaderScript::getInstance();
-        //StepByStepGuestBookAjaxHandler::newInstance();
+        // подключаем ajax обработчик
+        StepByStepGuestBookAjaxHandler::newInstance();
         //$stepByStepExampleAction = StepByStepExampleAction::newInstance();
         /*$stepByStepExampleFilter = StepByStepExampleFilter::newInstance();
        $stepByStepExampleFilter->callMyFilter("Roman");
