@@ -26,6 +26,7 @@ use includes\controllers\site\shortcodes\StepByStepCalendarPricesMonthShortcodeC
 use includes\controllers\site\shortcodes\StepByStepGuestBookShortcodesController;
 use includes\example\StepByStepExampleAction;
 use includes\example\StepByStepExampleFilter;
+use includes\widgets\StepByStepGuestBookDashboardWidget;
 
 class StepByStepLoader
 {
@@ -71,6 +72,8 @@ class StepByStepLoader
         StepByStepMyToolsMenuController::newInstance();
         StepByStepMyOptionsMenuController::newInstance();
         StepByStepGuestBookSubMenuController::newInstance();
+        StepByStepGuestBookDashboardWidget::newInstance();
+
 
     }
 
