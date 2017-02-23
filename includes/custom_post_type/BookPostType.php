@@ -20,6 +20,9 @@ class BookPostType
 
         // Сообщения при публикации или изменении типа записи book
         add_filter('post_updated_messages',  array( &$this, 'bookUpdatedMessages' ));
+        // Раздел "помощь" типа записи book
+        add_action( 'contextual_help', array( &$this, 'addHelpText' ), 10, 3 );
+
     }
 
     public function registerBookPostType(){
@@ -78,5 +81,32 @@ class BookPostType
         );
 
         return $messages;
+    }
+
+
+    public function addHelpText($contextual_help, $screen_id, $screen ){
+//$contextual_help .= print_r($screen); // используйте чтобы помочь определить параметр $screen->id
+        if('book' == $screen->id ) {
+            $contextual_help = '
+		<p>Напоминалка при редактировании записи book:</p>
+		<ul>
+			<li>Указать жанр, например Фантастика или История.</li>
+			<li>Указать автора книги.</li>
+		</ul>
+		<p>Если нужно запланировать публикацию на будущее:</p>
+		<ul>
+			<li>В блоке с кнопкой "опубликовать" нажмите редактировать дату.</li>
+			<li>Измените дату на нужную, будущую и подтвердите изменения кнопкой ниже "ОК".</li>
+		</ul>
+		<p><strong>За дополнительной информацией обращайтесь:</strong></p>
+		<p><a href="/" target="_blank">Блог о WordPress</a></p>
+		<p><a href="http://wordpress.org/support/" target="_blank">Форум поддержки</a></p>
+		';
+        }
+        elseif( 'edit-book' == $screen->id ) {
+            $contextual_help = '<p>Это раздел помощи показанный для типа записи Book и т.д. и т.п.</p>';
+        }
+
+        return $contextual_help;
     }
 }
