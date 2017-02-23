@@ -27,6 +27,12 @@ class BookPostType
         // Раздел "помощь" типа записи book
         add_action( 'contextual_help', array( &$this, 'addHelpText' ), 10, 3 );
 
+        // подключаем функцию активации мета блока (my_extra_fields)
+        add_action('add_meta_boxes', array( &$this, 'priceExtraFields' ), 1);
+
+        // включаем обновление полей при сохранении
+        add_action('save_post', array( &$this, 'priceExtraFieldsUpdate' ), 0);
+
     }
 
     public function registerBookPostType(){
@@ -171,5 +177,53 @@ class BookPostType
             'rewrite' => array( 'slug' => 'writer' ),
         ));
 
+    }
+    // Создадим новый мета блок для постов
+    public function priceExtraFields(){
+        add_meta_box(
+            'price_extra_fields', // id атрибут HTML тега, контейнера блока.
+            'Стоимость', // Заголовок/название блока. Виден пользователям.
+            array( &$this, 'renderPriceExtraFields' ),  //Функция, которая выводит на экран HTML содержание блока
+            'book', // Название экрана для которого добавляется блок.
+            'normal', // Место где должен показываться блок
+            'high' // Приоритет блока для показа выше или ниже остальных блоков:
+        );
+    }
+    // Заполним этот блок полями html формы.
+    // Делается это через, указанную в add_meta_box() функцию renderPriceExtraFields(). Именно она отвечает за содержание мета блока:
+    //Функция, которая выводит на экран HTML содержание блока
+    public function renderPriceExtraFields($post){
+        ?>
+        <p>
+            <label>
+                <input type="number" name="price_extra[price]" value="<?php echo get_post_meta($post->ID, 'price', 1); ?>" />
+                Стоимость
+            </label>
+        </p>
+        <?php
+    }
+
+    /*
+     * Сохраняем данные
+     * На этом этапе, мы уже создали блок произвольных полей, теперь нужно обработать данные полей при сохранении поста.
+     *  Обработать, значит записать их в в базу данных или удалить от туда. Для этого используем хук save_post, который
+     * срабатывает в момент сохранения поста. В этот момент мы получим данные из массива price_extra[] и обработаем них:
+     */
+    public function priceExtraFieldsUpdate($post_id ){
+        if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return false; // выходим если это автосохранение
+
+        if( !isset($_POST['price_extra']) ) return false; // выходим если данных нет
+
+        // Все ОК! Теперь, нужно сохранить/удалить данные
+        $priceExtra = array_map('trim', $_POST['price_extra']); // чистим все данные от пробелов по краям
+        foreach( $priceExtra as $key=>$value ){
+            if( empty($value) ){
+                delete_post_meta($post_id, $key); // удаляем поле если значение пустое
+                continue;
+            }
+
+            update_post_meta($post_id, $key, $value); // add_post_meta() работает автоматически
+        }
+        return $post_id;
     }
 }
