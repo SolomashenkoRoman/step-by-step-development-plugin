@@ -16,7 +16,7 @@ class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
 
     public function __construct(){
         add_action( 'admin_init', array( &$this, 'createOption' ) );
-        error_log(1);
+        //error_log(1);
     }
 
     /**
@@ -27,7 +27,7 @@ class StepByStepMainAdminMenuModel implements StepByStepICreatorInstance
      */
     public function createOption()
     {
-        error_log(2);
+        //error_log(2);
         // register_setting( $option_group, $option_name, $sanitize_callback );
         // Регистрирует новую опцию
         register_setting('StepByStepMainSettings', STEPBYSTEP_PlUGIN_OPTION_NAME, array(&$this, 'saveOption'));
