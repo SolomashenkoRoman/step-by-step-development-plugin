@@ -22,8 +22,8 @@ class StepByStepPlugin
         StepByStepLoader::getInstance();
         add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
 
-
-
+        // Создаем Custom Post Type Book
+        new BookPostType();
 
 
     }
