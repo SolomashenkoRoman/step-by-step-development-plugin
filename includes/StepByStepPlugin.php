@@ -10,6 +10,7 @@ namespace includes;
 
 use includes\common\StepByStepDefaultOption;
 use includes\common\StepByStepLoader;
+use includes\custom_post_type\BookPostType;
 use includes\models\admin\menu\StepByStepGuestBookSubMenuModel;
 
 
@@ -20,6 +21,8 @@ class StepByStepPlugin
     private function __construct() {
         StepByStepLoader::getInstance();
         add_action('plugins_loaded', array(&$this, 'setDefaultOptions'));
+
+
 
 
 
