@@ -9,7 +9,7 @@
 namespace includes\controllers\admin\menu;
 
 
-abstract class StepByStepBaseAdminMenuController implements StepByStepIСreatorInstance
+abstract class StepByStepBaseAdminMenuController implements StepByStepICreatorInstance
 {
     public function __construct(){
         /*
@@ -21,4 +21,28 @@ abstract class StepByStepBaseAdminMenuController implements StepByStepIСreatorI
 
     abstract public function action();
     abstract public function render();
+
+    /**
+     * Метод подключения view
+     * @param $view
+     * @param int $type
+     * @param array $data
+     */
+    protected function loadView($view, $type = 0, $data = array()){
+        if (file_exists($view)) {
+            switch($type){
+                case 0:
+                    require_once $view;
+                    break;
+                case 1:
+                    require $view;
+                    break;
+                default:
+                    require_once $view;
+                    break;
+            }
+        } else {
+            wp_die(sprintf(__('(View %s not found)', STEPBYSTEP_PlUGIN_TEXTDOMAIN), $view));
+        }
+    }
 }
